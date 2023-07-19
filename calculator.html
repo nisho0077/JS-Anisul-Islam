@@ -22,27 +22,27 @@
       //   sum = first_Num / last_Num;
       //   document.write(first_Num + " - " + last_Num + " = " + sum + "<br/>");
 
-      let first_Num = prompt("Input first Number: ");
-      let last_Num = prompt("Input last Number: ");
+      let first_Num = parseInt(prompt("Input first Number: "));
+      let last_Num = parseInt(prompt("Input last Number: "));
 
       let num1, num2;
 
-      num1 = parseInt(first_Num);
-      num2 = parseInt(last_Num);
+      //   num1 = parseInt(first_Num);
+      //   num2 = parseInt(last_Num);
 
       let result;
 
-      result = num1 + num2;
-      document.write(num1 + " + " + num2 + " = " + result + "<br/>");
+      result = first_Num + last_Num;
+      document.write(first_Num + " + " + last_Num + " = " + result + "<br/>");
 
-      result = num1 - num2;
-      document.write(num1 + " - " + num2 + " = " + result + "<br/>");
+      result = first_Num - last_Num;
+      document.write(first_Num + " - " + last_Num + " = " + result + "<br/>");
 
-      result = num1 * num2;
-      document.write(num1 + " * " + num2 + " = " + result + "<br/>");
+      result = first_Num * last_Num;
+      document.write(first_Num + " * " + last_Num + " = " + result + "<br/>");
 
-      result = num1 / num2;
-      document.write(num1 + " / " + num2 + " = " + result + "<br/>");
+      result = first_Num / last_Num;
+      document.write(first_Num + " / " + last_Num + " = " + result + "<br/>");
     </script>
   </body>
 </html>
