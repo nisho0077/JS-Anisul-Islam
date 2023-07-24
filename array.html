@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let user_Names = [
+        "Nisho",
+        "Niloy",
+        "Rabbi",
+        "Sufian",
+        "Raihan",
+        "Faisal",
+      ];
+
+      user_Names.push("Sultan");
+      user_Names.pop();
+      user_Names.pop();
+
+      console.log(user_Names.length);
+
+      let asian_countries = ["Bangladesh", "India", "Pakistan"];
+      let latin_American = ["Brazil", "Chile", "Argentina"];
+
+      let merge = asian_countries.concat(latin_American);
+
+      document.write(merge);
+    </script>
+  </body>
+</html>
