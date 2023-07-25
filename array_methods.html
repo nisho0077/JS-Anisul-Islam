@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let letter = ["Nisho", "Niloy", "Faisal"];
+      letter.push("Rabbi");
+
+      letter.unshift("Hasib");
+      letter.pop();
+      letter.pop();
+      letter.shift();
+
+      document.write(letter);
+
+      let alpha = ["a", "d", "b", "e", "c", "i", "f"];
+
+      alpha.sort();
+
+      console.log(alpha);
+
+      let numbers = [1, 9, 8, 7, 6, 5, 4, 3, 2];
+      numbers.sort(function (a, b) {
+        return b - a;
+      });
+      console.log(numbers);
+
+      let letters = ["Nisho", "Hasib", "Rifa", "Rabbi", "Rashu"];
+      letters.slice(2, 3);
+      console.log(letters);
+    </script>
+  </body>
+</html>

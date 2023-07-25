@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function User_1(name, home, number, profession) {
+        this.name = name;
+        this.home = home;
+        this.number = number;
+        this.profession = profession;
+
+        this.details = function () {
+          console.log(name);
+          console.log(home);
+          console.log(number);
+          console.log(profession);
+        };
+      }
+
+      let user = new User_1("Faisal", "Dhopadi", "01615689903", [
+        "Student",
+        "Athlets",
+        "Bussinessman",
+      ]);
+
+      let user1 = new User_1("Nisho", "Noapara", "01615689903", [
+        "Programmer",
+        "Athlets",
+        "Bussinessman",
+      ]);
+
+      user.details();
+    </script>
+  </body>
+</html>
