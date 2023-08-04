@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>You didn't click any button</h1>
+    <button class="btn">btn_1</button>
+    <button class="btn">btn_2</button>
+    <button class="btn">btn_3</button>
+
+    <script>
+      let len = document.querySelectorAll(".btn").length;
+      for (let i = 0; i < len; i++) {
+        document
+          .querySelectorAll(".btn")
+          [i].addEventListener("click", function () {
+            let text = this.innerHTML;
+            document.querySelector("h1").innerHTML = text + " is clicked";
+          });
+      }
+    </script>
+  </body>
+</html>

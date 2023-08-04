@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dom.css" />
+  </head>
+  <body>
+    <h1>Hello Bangladesh!</h1>
+    <button onclick="addStyle()">Add-style</button>
+    <button onclick="removeStyle()">Remove-style</button>
+
+    <script>
+      let myLet;
+      function addStyle() {
+        myLet = document.querySelector("h1");
+        // myLet.style.fontSize = "3rem";
+        // myLet.style.fontStyle = "italic";
+        // myLet.style.fontWeight = "bold";
+        // myLet.style.color = "yellow";
+        myLet.classList.add("function_style");
+      }
+
+      function removeStyle() {
+        mylet = document.querySelector("h1");
+        mylet.classList.remove("function_style");
+      }
+    </script>
+  </body>
+</html>

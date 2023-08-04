@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>This is for Dom-Traversing</h1>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt natus
+      facere quas numquam minima corrupti odio maiores assumenda. Sunt ab unde
+      doloribus ea eum odio molestias. Dolorum, sed suscipit!
+    </p>
+    <a href="#">Link</a>
+    <ol class="order_list">
+      <li class="list_item1"></li>
+      <li class="list_item3"></li>
+      <li class="list_item3"></li>
+    </ol>
+
+    <script>
+      let one = document.querySelector(".order_list");
+
+      let two = (one.querySelector(".list_item1").innerHTML = "How are you?");
+      let dom_traversing = document.querySelector("h1");
+      dom_traversing.innerHTML = "This is my country";
+    </script>
+  </body>
+</html>

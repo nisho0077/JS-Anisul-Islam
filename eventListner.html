@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dom.css" />
+  </head>
+  <body>
+    <p id="click_Me">Hi</p>
+
+    <script>
+      let myVar = document.querySelector("#click_Me");
+      myVar.addEventListener("click", myFunction);
+
+      function myFunction() {
+        myVar.innerHTML = "Hello Nisho";
+      }
+    </script>
+  </body>
+</html>

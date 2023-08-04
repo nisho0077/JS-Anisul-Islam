@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="audio.css" />
+  </head>
+  <body>
+    <button class="btn">Song_1</button>
+    <button class="btn">Song_2</button>
+    <button class="btn">Song_3</button>
+
+    <script>
+      let len = document.querySelectorAll("button").length;
+      let audio;
+
+      for (let i = 0; i < len; i = i + 1) {
+        document
+          .querySelectorAll(".btn")
+          [i].addEventListener("click", function () {
+            let text = this.innerHTML;
+            console.log(text);
+
+            switch (text) {
+              case "Song_1":
+                audio = new Audio("Audio/1.mp3");
+                audio.play();
+                break;
+
+              case "Song_2":
+                audio = new Audio("Audio/2.mp3");
+                audio.play();
+                break;
+
+              case "Song_3":
+                audio = new Audio("Audio/3.mp3");
+                audio.play();
+                break;
+            }
+          });
+      }
+    </script>
+  </body>
+</html>
