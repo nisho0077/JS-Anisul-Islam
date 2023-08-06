@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        font-size: 62.5%;
+      }
+      div {
+        margin-bottom: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required autofocus />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required />
+      </div>
+      <button type="submit" value="">Click-Here</button>
+    </form>
+
+    <h1>Data:</h1>
+
+    <script>
+      let form = document.querySelector("form");
+      let name = form.querySelector("div #name");
+      let email = form.querySelector("div #email");
+      let password = form.querySelector("div #password");
+
+      form.addEventListener("submit", formHandler);
+
+      function formHandler(e) {
+        e.preventDefault();
+        let userInfo = {
+          name: name.value,
+          email: email.value,
+          password: password.value,
+        };
+        console.log(userInfo);
+      }
+    </script>
+  </body>
+</html>

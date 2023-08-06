@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="name">Name:</label>
+    <input type="text" name="name" />
+
+    <script>
+      let focuss = document.querySelector("input");
+      focuss.addEventListener("focus", function () {
+        focuss.style.backgroundColor = "purple";
+      });
+      focuss.addEventListener("focusout", function () {
+        console.log("mouse is out");
+      });
+      focuss.addEventListener("focusin", function () {
+        console.log("mouse is in");
+      });
+    </script>
+  </body>
+</html>

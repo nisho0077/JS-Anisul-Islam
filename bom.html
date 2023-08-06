@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>BOM-Browser Object Model</h1>
+    <div class="div1">
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+    </div>
+    <button id="visit-site">Click</button>
+    <script>
+      let div2 = document.querySelector(".div1");
+      let p1 = div2.querySelectorAll(".div1 p")[0];
+      p1.innerHTML = location.href;
+
+      let p2 = div2.querySelectorAll(".div1 p")[1];
+      p2.innerHTML = location.port;
+
+      let p3 = div2.querySelectorAll(".div1 p")[2];
+      p3.innerHTML = location.protocol;
+
+      let p4 = div2.querySelectorAll(".div1 p")[3];
+      p4.innerHTML = location.hostname;
+
+      let p5 = div2.querySelectorAll(".div1 p")[4];
+      p5.innerHTML = location.pathname;
+
+      let site = document.querySelector("#visit-site");
+      site.addEventListener("click", myFunction);
+
+      function myFunction() {
+        location.assign("https://www.w3schools.com");
+      }
+    </script>
+  </body>
+</html>
