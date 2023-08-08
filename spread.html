@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const myFunction = (a, b, c, ...z) => {
+        console.log(`a = ${a}, b = ${b}, c = ${c}, d = ${z}`);
+      };
+
+      console.log(myFunction(12, 34, 43, 2342, 5324, 5324));
+
+      const numbers = [1, 2, 3];
+      const numbers1 = [4, 5, 6];
+
+      console.log(...numbers, ...numbers1);
+      console.log(numbers.concat(numbers1));
+
+      console.log(myFunction(...numbers));
+
+      const nisho = {
+        firstName: "Nisho",
+        lastName: "Sarder",
+      };
+      const niloy = {
+        firstNamee: "Niloy",
+        lastNamee: "Islam",
+      };
+
+      const brother = { ...nisho, ...niloy };
+
+      console.log(brother);
+    </script>
+  </body>
+</html>
