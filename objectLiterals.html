@@ -7,14 +7,13 @@
   </head>
   <body>
     <script>
-      const studentInfo = (name, age) => {
-        return {
-          name,
-          age,
-        };
+      const info = {
+        body(x) {
+          return `${x}`;
+        },
       };
 
-      console.log(studentInfo("Nisho", 23));
+      console.log(info.body(`Hi! My name is Nisho!`));
     </script>
   </body>
 </html>
